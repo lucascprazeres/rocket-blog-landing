@@ -16,16 +16,20 @@
 
 body {
   background: var(--light-purple);
-  font-family: 'Roboto', sans-serif;
+  font: 16px 'Roboto', sans-serif;
 }
 
 h1, h2, h3 {
   font-family: 'Poppins', sans-serif;
 }
 
+section {
+  padding: 70px 140px;
+}
+
 section#home {
   background: var(--purple-bg);
-  padding: 70px 140px;
+  border-bottom: 6px solid var(--green);
 }
 
 #home header {
@@ -107,4 +111,55 @@ section#home {
 
 #featured a img {
   margin-left: 8px;
+}
+
+section#content {
+  display: grid;
+  grid-template-areas:
+    "post1 post1 post2"
+    "post1 post1 post3"
+    "post4 post5 post6";
+
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+section#content h3 {
+  color: var(--purple-bg);
+  font-size: 24px;
+  line-height: 36px;
+  margin: 16px 0;
+}
+
+section#content img {
+  margin-bottom: 16px;
+}
+
+#post1 {
+  grid-area: post1;
+  width: 570px;
+  margin-bottom: 64px;
+}
+
+#post2 {
+  grid-area: post2;
+}
+
+#post3 {
+  grid-area: post3;
+}
+
+#post4 {
+  grid-area: post4;
+}
+
+#post5 {
+  grid-area: post5;
+}
+
+#post6 {
+  grid-area: post6;
+}
+
+.mid-post {
+  width: 370px;
 }
