@@ -1,0 +1,75 @@
+:root {
+  --purple-bg: #290742;
+  --dark-bg: #170027;
+  --button-bg: #9e6dc2;
+  --white: #fff;
+  --light-purple: #fbf6ff;
+  --green: #4fff4b;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--light-purple);
+  font-family: 'Roboto', sans-serif;
+}
+
+section#home {
+  background: var(--purple-bg);
+  padding: 70px 140px;
+}
+
+#home header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 80px;
+}
+
+#home header nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+
+#home header nav ul li a {
+  text-decoration: none;
+  font-size: 18px;
+  color: var(--white);
+}
+
+#home header nav ul li a.active {
+  font-weight: bold;
+}
+
+#home header form fieldset {
+  border: none;
+  height: 44px;
+  width: 300px;
+
+  display: flex;
+  align-items: center;
+}
+
+#home header form fieldset input {
+  border: none;
+  height: 100%;
+  background: var(--dark-bg);
+  color: var(--light-purple);
+  padding: 16px;
+  font-size: 14px;
+}
+
+#home header form fieldset button {
+  height: 100%;
+  width: 70px;
+  border: none;
+  background: var(--button-bg);
+  cursor: pointer;
+}
